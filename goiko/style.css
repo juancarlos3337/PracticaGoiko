@@ -1,0 +1,901 @@
+@font-face {
+    font-family: knout;
+    src: url("./Knockout-HTF73-FullHeviweight.386a901fd564bd4a47c7.woff2");
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  
+}
+
+.boton{
+    border: 2px solid whitesmoke;
+    border-radius: 18px;
+    padding: 8px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+.tam_img{ 
+    border-radius: 20px;
+    width: 100%;
+}
+/* menu */
+header>div{
+    height: 12vh;
+    margin: 1.5% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header> div >div:nth-child(1)>div:nth-child(1)>svg {
+    fill: whitesmoke;  
+    width: 100%;
+    height: 6rem;
+}
+
+header >div > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header >div button{
+    color: whitesmoke;
+    border: none;
+    background-color: transparent;
+    font-size: 2.5rem;
+}
+
+/* çLOS enlaces */
+header>div>div:nth-child(2)>a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header>div>div:nth-child(2)>:first-child+a{
+    background-color: #ee2737;
+    padding: 8px 25px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+header>div>div:nth-child(2)>:first-child+a:hover{
+    background-color: #fcb900;
+    color: black;
+    transition: 500ms;
+}
+.boton:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition:all 500ms;
+}
+
+/* EMPIEZO CSS DEL MENU DESPLE */
+
+/* .navbar> div>svg {
+    fill: whitesmoke;  
+    width: 100%;
+    height: 4rem;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translateY(-50%) translateX(-100%);
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.nav{
+    height: 0vh;
+    width: 100%;
+    background-color: #ee2737;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    transition: height 0.5s;
+    overflow: hidden;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   flex-direction: column;
+    border: 1px solid black;
+}
+.navbar>button{
+    background-color: black;
+    width: 6vw;
+   height: 13vh;
+}
+.navbar>a {
+    margin-right: 2%;
+}
+.segu{
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    
+}
+.terce{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#desple{
+        font-size: 2rem;
+        background-color:transparent;
+        border:none;
+        cursor: pointer; 
+} */
+
+/* CIERRO EL MENU DESPLE */
+
+/* section burguer giratoria */
+#sec1{
+    text-align: center; 
+    color: whitesmoke;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#sec1>div>video{
+    height: 80vh;
+    position:absolute;
+    z-index: 998;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+#sec1 {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+#sec1>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    view-timeline: --aparecer block;
+    animation-timeline: --aparecer;
+    animation-name: aparicion;
+    animation-range: entry 150% cover 100%;
+    animation-fill-mode: both;
+}
+
+#sec1 >div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#sec1>div >div>p:nth-child(odd){
+    animation: mover-delao  15s linear infinite running; 
+    transition: 1s;
+    color: whitesmoke; 
+    font-size: 8rem;
+    font-weight:500;
+    width: 100%;
+    font-family: knout;
+    line-height: 120px;
+}
+
+#sec1>div >div>p:nth-child(odd)>span{
+    -webkit-text-stroke: 1px  whitesmoke;
+    color: transparent;
+}
+
+#sec1>div >div>p:nth-child(even){
+    animation: mover-delao2  15s linear infinite running; 
+    color: whitesmoke; 
+    font-size: 8rem;
+    font-weight:500;
+    width: 100%;  
+    transition: 1s;
+    font-family: knout;
+    line-height: 120px;
+}
+
+#sec1>div >div>p:nth-child(even)>span{
+    color: transparent;
+    -webkit-text-stroke: 1px  whitesmoke;
+}
+ 
+
+/* seccion 2 */
+#sec2{
+    /* margin-top: 3% ; */
+    height: 80vh;
+    border-top: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: end;
+    background: url(./img/imagenes/Carrusel_2x1.jpg) ;
+    background-position:center;
+    background-repeat: none;
+    background-size: cover;
+    view-timeline: --esti block;
+    animation-timeline: --esti;
+    animation-name: estiro;
+    animation-range: entry 15% cover 50%;
+    animation-fill-mode: both;
+}
+
+#sec2>div{
+    /* margin-left: 3%; */
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding-left:3% ;
+
+}
+#sec2 > div >p > span{
+    font-size: 6rem;
+    line-height: 82px;
+    font-weight: 900;
+}
+#sec2 > div >a{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+/* Seccion 3 */
+#sec3 > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sec3 >div >div{
+    width: 25%;
+   
+}
+#sec3>img{
+    width: 100%;
+}
+#sec3 >div>div>div{
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+}
+
+#sec3>div>div>p>span{
+    font-family: knout;
+}
+
+#sec3>div>div>p{
+    padding-left: 15px;
+    margin-top: 15px;
+}
+/*SECCION CARTA*/
+#carta{
+    /* height: 10vh; */
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    margin: 3% 0;
+    padding: 2.5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carta>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#carta>div>p{
+    font-size: 8rem;
+    font-family: knout;
+    line-height: 120px;
+    animation:  mover-delao2  15s linear infinite running; 
+}
+
+#carta>div>p>span{
+    color: transparent;
+    -webkit-text-stroke: 1px  whitesmoke;
+}
+
+/* SECCION 4 */
+#sec4{
+    margin-top: 4%;
+    border-radius:50px ;
+}
+#sec4 >div:nth-child(1)>h2{
+    font-size: 3rem;
+    font-family: knout;
+}
+#sec4>div:nth-child(2){
+    background: linear-gradient(0deg, rgb(151, 29, 39) 0%, rgb(0, 0, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+#sec4>div:nth-child(2)>div>h2{
+    font-family: knout;
+    font-size: 5rem;
+}
+
+#sec4>div:nth-child(2)>div>p{
+    margin: 6% 0;
+}
+#sec4>div:nth-child(2)>div:nth-child(2){
+    width: 30%;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#sec4>div:nth-child(1){
+    text-align: center;
+}
+#sec4>div:nth-child(1)>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec4>div:nth-child(1)>div>div{
+    width: 7%;
+    margin-right: 2%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+/*SECCION 5*/
+#sec5{
+    position: relative;
+    /* width: 100%; */
+    height: 100vh;
+    overflow: hidden;
+   display: flex;
+   align-items: end;
+}
+
+#sec5 >video{
+    position: absolute;
+    z-index: -1000;  
+}
+
+#sec5 >div>h2{
+    font-family: knout;
+    font-size: 3.5rem;
+}
+
+#sec5 >div>p{
+    margin: 3% 0;
+}
+
+#sec5 >div>a{
+    font-family: knout;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#sec5 >div{
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+
+/* Seccion 6 */
+#sec6>div{
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    /* border: 1px solid yellow; */
+    height: 60vh;
+    width: 100%;
+}
+#sec6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+#sec6 >div>div:nth-child(2)>div:nth-child(3){
+    width: 15%;
+    height: 40vh;
+    z-index: 3;
+}
+#sec6 >div>div:nth-child(2)>div:nth-child(2){
+    width: 30%;
+    height: 10vh;
+    z-index: 2;
+}
+
+#sec6 >div>div:nth-child(2)>div:nth-child(1){
+    width: 30%;
+    height: 40vh;
+    z-index: 2;
+}
+#sec6 >div>div:nth-child(2){
+    height: 40vh;
+    width: 100%;
+  
+}
+#sec6 >div>div:nth-child(2)>div{
+    left: 0;
+    position: absolute;
+    top: 0;
+    
+}
+#sec6 >div>div:nth-child(2)>div:nth-child(3)>img{
+   width: 70%;
+}
+
+#sec6 >div >div:nth-child(2)>div:nth-child(1) {
+    view-timeline-name: --efecto;  /* nombre a la linea de tiempo */
+    view-timeline-axis: block;      /*que la animacionn se haga en bloque*/ 
+    animation-timeline: --efecto;   /*asociacion*/
+    animation-name: animarBurguer;
+    animation-range: entry 15% cover 50%;
+    animation-fill-mode: both;
+}
+#sec6 >div >div:nth-child(2)>div:nth-child(2) {
+    view-timeline-name: --efecto;  /* nombre a la linea de tiempo */
+    view-timeline-axis: block;      /*que la animacionn se haga en bloque*/ 
+    animation-timeline: --efecto;   /*asociacion*/
+    animation-name: animarPan;
+    animation-range: entry 15% cover 50%;
+    animation-fill-mode: both;
+}
+
+#sec6 >div >div:nth-child(2)>div:nth-child(3) {
+    view-timeline-name: --efecto;  /* nombre a la linea de tiempo */
+    view-timeline-axis: block;      /*que la animacionn se haga en bloque*/ 
+    animation-timeline: --efecto;   /*asociacion*/
+    animation-name: animarSalsa;
+    animation-range: entry 15% cover 50%;
+    animation-fill-mode: both;
+}
+#sec6>div >div:nth-child(1){
+    width: 40%;
+    margin-left: 5%;
+}
+#sec6>div >div:nth-child(1)>*{
+    margin: 3% 0;
+}
+#sec6>div >div:nth-child(1)>h2{
+   font-family: knout;
+   font-size: 4rem;
+}
+/* SECCION 7 */
+
+#sec7{
+    /* height: 10vh; */
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    margin: 3% 0;
+    padding: 2.5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec7>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#sec7>div>p{
+    font-size: 8rem;
+    font-family: knout;
+    line-height: 120px;
+    animation:  mover-delao2  15s linear infinite running; 
+}
+
+#sec7>div>p>span{
+    color: transparent;
+    -webkit-text-stroke: 1px  whitesmoke;
+}
+
+/* SECION 8 */
+#sec8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+#sec8 > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:2% 0;
+}
+
+#sec8 >div >div{
+    width: 30%;
+}
+
+#sec8 >div>div>div{
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+    
+}
+
+#sec8>div>div>p>span{
+    font-family: knout;
+}
+
+#sec8 >div >div >*{
+    margin: 3% 0;
+}
+#sec8>div>div>a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+footer>div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer>div>div{
+    background-color: whitesmoke ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer>div>div>div:nth-child(1)>svg {
+    margin-left: 5%;
+    height: 9rem;
+}
+footer>div>div >div:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+    font-family: knout;
+    font-size: 3rem;
+}
+
+footer>div>div>div:nth-child(2)>span:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px  black;
+}
+footer>div>div >div:nth-child(3){
+    font-size: 1.5rem;
+}
+footer span{
+    color: black;
+}
+footer p{
+    color: black;
+}
+footer>div>div>div{
+    width: 30%;
+    margin:5% 0;
+}
+
+footer>div >div>div:nth-child(3)>p{
+    margin: 1% 0;
+}
+/* DIV CHORREO */
+footer>div>div:nth-child(2)>div{
+    /* height: 10vh; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 3% 0;
+    padding: 2.5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer>div>div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer>div>div:nth-child(2)>div>p{
+    font-size: 8rem;
+    font-family: knout;
+    line-height: 120px;
+    animation:  mover-delao2  15s linear infinite running; 
+}
+
+footer>div>div:nth-child(2)>div >p>span{
+    color: transparent;
+    -webkit-text-stroke: 2px  black;
+}
+
+
+/* ANIMACIONES */
+
+/* Animacion imagenes seccion 6 */
+@keyframes animarBurguer{
+    0%{ 
+        scale: 70%;
+        transform: rotate(-40deg);
+        transform-origin: 0px 400px;
+    }
+
+    100%{
+        scale: 100%;
+        transform: translate(210%, 0px) rotate(16deg);
+        transform-origin: 0% 100%;
+    }
+}
+
+@keyframes animarPan{
+    0%{
+        
+        scale: 0;      
+        transform: rotate(-10deg);
+        transform-origin: 0px 400px;
+    }
+
+    100%{
+        scale: 100%;      
+        transform: translate(170%, 0px) rotate(40deg);
+        transform-origin: 0% 100%;
+    }
+}
+
+@keyframes animarSalsa{
+    0%{    
+        scale: 0;
+        transform: rotate(-10deg);
+        transform-origin: 0px 399.719px;
+    }
+
+    100%{
+        scale: 100%; 
+        transform: translate(300%, 0px) rotate(-45deg);
+        transform-origin: 0% 100%;
+    }
+}
+
+
+/* Animacion letras */
+@keyframes mover-delao{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(10%);
+    }
+}
+
+@keyframes mover-delao2{
+    from{
+        transform: translateX(10%);
+    }
+    to{
+        transform: translateX(-0%);
+    }
+}
+
+/* ANIMACION HAMBURGUESA */
+
+@keyframes aparicion{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;     
+    }
+}
+
+@keyframes estiro{
+    from{
+        width: 70%;
+       
+    }
+    to{
+        width: 100%;
+        border-left: 0;
+        border-right: 0;
+    }
+}
+
+/* INICIO DE RESPONSIVE */
+
+@media only screen and (max-width: 1200px) {
+    #sec2 > div >p > span{
+        font-size: 4rem;
+        line-height: 82px;
+        font-weight: 900;
+    }
+    #sec2 > div >a{
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 3%;
+        text-decoration: none;
+    }
+
+    #carta{
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    #sec4>div:nth-child(2)>div:nth-child(2)>h2{
+        font-size: 3rem;
+    }
+
+    #sec5>div>h2{
+        font-size: 2.5rem;
+    }
+
+    #sec6>div >div:nth-child(1)>h2{
+        font-size: 2rem;       
+    }
+
+    #sec7{
+        padding: 0;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #sec4>div:nth-child(1)>h2{
+        font-size: 2rem;
+    }
+
+    #sec4>div:nth-child(2){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #sec4>div:nth-child(2)>div:nth-child(1){
+        width: 100%;
+        text-align: center;
+       
+    }
+
+    #sec4>div:nth-child(2)>div:nth-child(2){
+        width: 70%;
+        margin: 2% 2%;
+    }
+
+    #sec4>div:nth-child(2)>div:nth-child(2)>h2{
+        font-size: 3.7rem;
+    }
+
+    footer>div>div:nth-child(1)>div:nth-child(1){
+        width: 100%;
+    }
+
+    footer>div>div:nth-child(1){
+        justify-content: space-around;
+    }
+    footer>div>div:nth-child(1)>div> p{
+        font-size: 1.4rem;
+    }
+    footer>div>div:nth-child(1)>div> span{
+        font-size:2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header > div:nth-child(1)>div:nth-child(2)> a:nth-child(3){
+        display: none;
+    }
+    header> div >div:nth-child(1)>div:nth-child(1)>svg{
+        height: 4rem;
+    }
+
+    #sec3>div{
+        flex-direction: column;
+    }
+    #sec3>div>div{
+        width: 77%;
+        height: 10%;
+        margin: 4% 0;
+    }
+    #sec4>div:nth-child(2)>div:nth-child(2)>h2{
+        font-size: 2rem;
+    }
+    #sec4>div:nth-child(2){
+        align-items: center;
+    }
+    #sec4>div:nth-child(2)>div:nth-child(2)>a{
+        width: 100%;
+        text-align: center;
+    }
+
+    #sec5>div{
+        width: 70%;
+    }
+
+    #sec6>div{
+        flex-direction: column;
+    }
+
+    #sec6>div>div:nth-child(1)>*{
+        margin: 7% 0;
+    }
+
+    #sec6>div >div:nth-child(1) {
+        width: 77%;
+    }
+
+    #sec6>div >div:nth-child(1)>a{
+        width: 100%;
+        text-align: center;   
+    }
+
+    #sec8>div{
+        flex-direction: column;
+        margin: 5% 0;
+    }
+
+    #sec8>div>div{
+        width: 77%;
+    }
+    #sec8>a{
+        width: 77%;
+        text-align: center;
+    }
+   footer>div>div{
+    flex-direction: column;
+   }
+
+   footer>div>div>div:nth-child(2){
+        margin-left: 7%;
+    }
+    footer>div>div>div:nth-child(3){
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header > div:nth-child(1)>div:nth-child(2)> a:nth-child(2){
+    display: none;
+    }
+
+    #sec2>div>p>span{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    #carta{
+        font-size: 1.5rem;
+    }
+
+    #sec8>div>*{
+        margin: 5% 0;
+    }
+
+    footer>div>div:nth-child(1)>div:nth-child(2) span {
+        font-size: 1.7rem;
+    }
+
+    footer>div>div:nth-child(1)>div:nth-child(3) p {
+        font-size: 1.4rem;
+    }
+}
